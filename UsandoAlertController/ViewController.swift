@@ -9,13 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
     @IBAction func greetButtonPressed() {
+        presenAlert()
+    }
+    
+    private func presenAlert(){
         let alert = UIAlertController(title: "Saludo", message: "Hola", preferredStyle: .alert)
         
         let closeAction = UIAlertAction(title: "Cerrar", style: .destructive)
