@@ -15,5 +15,15 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func greetButtonPressed() {
+        let alert = UIAlertController(title: "Saludo", message: "Hola", preferredStyle: .alert)
+        
+        let closeAction = UIAlertAction(title: "Cerrar", style: .destructive)
+        
+        alert.addAction(closeAction)
+        
+        present(alert, animated: true)
+    }
+    
 }
 
